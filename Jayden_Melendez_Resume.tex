@@ -1,91 +1,85 @@
 \documentclass[letterpaper,9pt]{article}
-\usepackage[margin=0.45in]{geometry}
+\usepackage[margin=0.4in, top=0.3in, bottom=0.3in]{geometry}
 \usepackage{enumitem}
-\usepackage[colorlinks=true, urlcolor=blue]{hyperref} % <-- updated here!
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \usepackage{titlesec}
 \usepackage{setspace}
-\usepackage[skip=2pt plus 1pt]{parskip}
+\usepackage[skip=0pt]{parskip}
 
-% Define section format
-\titleformat{\section}{\large\bfseries}{}{0em}{}
-\titlespacing{\section}{0pt}{6pt plus 1pt minus 1pt}{2pt}
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}
+\titlespacing{\section}{0pt}{4pt}{1pt}
 
 \begin{document}
 
 \pagestyle{empty}
 
 \begin{center}
-    {\LARGE \textbf{Jayden Melendez}} \vspace{1pt} \\
-    Queens, New York 
-    \ensuremath{\diamond}\hspace{0.5em} +1 646-920-8147 \\
-    \vspace{2pt}
-    linkedin.com/in/jayden-melendez-565032261
-    \ensuremath{\diamond}\hspace{0.5em}
-    jayden.melendez419@gmail.com
-    \ensuremath{\diamond}\hspace{0.5em}
-    github.com/Jaydenxm419
+    {\LARGE \textbf{Jayden Melendez}} \\[2pt]
+    Queens, New York \ensuremath{\diamond} +1 646-920-8147 \ensuremath{\diamond} jayden.melendez419@gmail.com \\[1pt]
+    linkedin.com/in/jayden-melendez-565032261 \ensuremath{\diamond} github.com/Jaydenxm419
 \end{center}
 
-\vspace{-8pt}
+\vspace{-4pt}
 
 \section*{Education}
-\hrule height 0.4pt width \textwidth
-\textbf{Marist College}, Poughkeepsie, New York \\
-B.S. in Computer Science \hfill Graduation: May 2026 \\
-Minor: Cyber Security \hfill GPA: 3.95
+\hrule height 0.4pt width \textwidth \vspace{2pt}
+\textbf{Marist College}, Poughkeepsie, New York \hfill Graduation: May 2026 \\
+B.S. in Computer Science, Minor: Cyber Security \hfill GPA: 3.95
 
 \section*{Relevant Coursework}
-\hrule height 0.4pt width \textwidth
+\hrule height 0.4pt width \textwidth \vspace{2pt}
 Articial Intelligence in Software Development, Operating Systems, Algorithms, Computer Organization and Architecture, Intro to z/OS \& Major Subsystems, Internetworking, Database Management, Mobile Security
 
 \section*{Professional Experience}
-\hrule height 0.4pt width \textwidth
-\textbf{International Business Machine (IBM)}, Poughkeepsie, New York \\
-\textit{Backend Developer Co-op} \hfill May 2024 -- Present
-\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+\hrule height 0.4pt width \textwidth \vspace{2pt}
+\textbf{International Business Machine (IBM)}, Poughkeepsie, New York \hfill May 2024 -- Present \\
+\textit{Backend Developer Co-op}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, parsep=0pt]
     \item \textbf{Architectural Modernization:} Contributed to the refactoring of a legacy \textbf{50,000+ LoC Java} mainframe patch management system; transitioned tightly-coupled modules into a \textbf{Service-Oriented Architecture (SOA)} to improve horizontal scalability and maintainability.
     \item \textbf{Systems Engineering:} Engineered a programmatic diagnostic engine that parses data across hundreds of relational database tables to automate hardware issue detection; reduced manual troubleshooting time by \textbf{10\%} for 50+ global support.
     \item \textbf{Performance Optimization:} Optimized complex \textbf{SQL queries and indexing strategies} within a DB2 environment, achieving a \textbf{20\% reduction} in existing data retrieval latency for critical patch lifecycle tracking.
     \item \textbf{Reliability \& DevSecOps:} Enhanced system stability by implementing a comprehensive \textbf{SwaggerUI} testing suite and utilized \textbf{Podman} for containerized development, ensuring codebase environmental consistency among team members.
+    \item \textbf{Test-Driven Development:} Adopted \textbf{TDD} using \textbf{JUnit} to ensure the reliability of the refactored SOA modules, reducing production regressions during the mainframe modernization.
     \item \textbf{Collaborative Leadership:} Actively collaborate with senior architects to identify technical debt, utilizing \textbf{Agile methodologies} and \textbf{Github Enterprise} for code reviews and version control to ensure high-quality software delivery.
 \end{itemize}
 
-\vspace{4pt}
-\textbf{Marist College}, Poughkeepsie, New York \\
-\textit{Resident Assistant} \hfill Aug 2023 -- Present
-\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+\vspace{2pt}
+\textbf{Marist College}, Poughkeepsie, New York \hfill Aug 2023 -- Present \\
+\textit{Resident Assistant}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, parsep=0pt]
     \item Manage crisis intervention, conflict resolution, and facility logistics for a community of 60+ residents.
     \item Facilitate community engagement and budget management through coordinated educational programming.
 \end{itemize}
 
 \section*{Projects}
-\hrule height 0.4pt width \textwidth
-\textbf{F.A.S.T — Financial Account Statement Transformer} \hfill Feb 2026 - Present\\
-\textit{Python, Scikit-learn, Docker, Pydantic, Ollama Phi-4 Mini, YAML}
-\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+\hrule height 0.4pt width \textwidth \vspace{2pt}
+\textbf{F.A.S.T — Financial Account Statement Transformer} \hfill Feb 2026 -- Present \\
+\textit{Python, Scikit-learn, Docker, Jenkins, Pydantic, Ollama Phi-4 Mini, YAML}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, parsep=0pt]
     \item Engineering a local, containerized Python DAG pipeline to automate the extraction and standardization of bank statement data from PDFs into unified CSV schemas using Ollama's local LLM to parse the data from the PDFs.
     \item Implementing a machine learning router using Scikit-learn (TF-IDF and SGDClassifier) to perform context-aware transaction classification and deduplication across different account types.
     \item Architecting a robust data validation layer with Pydantic, featuring two-tier reconciliation (mathematical balance checks and sign validation) to ensure 100\% data integrity.
     \item Developing a modular, configuration-driven system using Docker and YAML, enabling seamless onboarding of new bank formats without modifying core logic.
+    \item \textbf{CI/CD \& Quality Assurance:} Implementing a CI/CD pipeline using \textbf{Jenkins} to automate unit and module testing suites, ensuring \textbf{100\% code coverage} for the Scikit-learn router and Pydantic validation layers before containerized deployment.
 \end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 \textbf{NutritionU — A meal planner for students} \hfill Aug 2025 -- Dec 2025 \\
 \textit{React, Vite, Node.js, Postgres, Postman}
-\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt, parsep=0pt]
     \item \textbf{Full-Stack Development:} Built a full-stack meal planning application using \textbf{React}, \textbf{Node.js}, and \textbf{PostgreSQL}, enabling students to generate personalized, budget-conscious meal plans based on dietary goals.
     \item \textbf{AI Integration:} Integrated the \textbf{OpenAI API} to power intelligent recipe substitution for dietary restrictions, automated macro-nutrient target calculation, and dynamic meal plan generation from user grocery lists.
     \item \textbf{Database Design:} Architected a normalized \textbf{PostgreSQL} schema to manage user profiles, grocery inventories, and nutritional data, enforcing data integrity through foreign key constraints and parameterized queries to prevent SQL injection.
 \end{itemize}
 
 \section*{Skills}
-\hrule height 0.4pt width \textwidth
-\textbf{Programming Languages:} JavaScript, SQL, Python, Java, TypeScript, C++, Assembly, HTML/CSS\\
+\hrule height 0.4pt width \textwidth \vspace{2pt}
+\textbf{Programming Languages:} JavaScript, SQL, Python, Java, TypeScript, C++, Assembly, HTML/CSS \\
 \textbf{Technologies/Frameworks:} React, ReactNative, Springboot, Python FastAPI, Node.js, Docker, Linux \\
 \textbf{Developer Tools:} VS Code, GitHub, SwaggerUI, Cursor, Claude Code
 
 \section*{Extracurriculars}
-\hrule height 0.4pt width \textwidth
+\hrule height 0.4pt width \textwidth \vspace{2pt}
 \textbf{Ultimate Frisbee Player}, Marist College, Poughkeepsie, NY \hfill Aug 2022 -- Present \\
 \textbf{Spiritual Life and Service Volunteer}, Marist College, Poughkeepsie, NY \hfill Aug 2022 -- Present
 
